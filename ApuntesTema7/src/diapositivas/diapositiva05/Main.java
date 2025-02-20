@@ -1,4 +1,4 @@
-package diapositivas.diapositiva5;
+package diapositivas.diapositiva05;
 
 import java.util.Arrays;
 import java.util.List;

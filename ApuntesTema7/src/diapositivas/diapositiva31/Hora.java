@@ -6,8 +6,8 @@ public class Hora {
 	private int minuto;
 	
 	public Hora(int hora, int minuto) {
-		this.hora = hora;
-		this.minuto = minuto;
+		setHora(hora);
+		setMinuto(minuto);
 	}
 	
 	public int getHora() {
@@ -56,5 +56,12 @@ public class Hora {
 	public String toString() {
 		return String.format("%02d:%02d", this.hora, this.minuto);
 	}
+	
+	
+	
+	
+	
+	
+	
 
 }

@@ -1,4 +1,4 @@
-package diapositivas.diapositiva5;
+package diapositivas.diapositiva05;
 
 public class Persona extends Object {
 	
