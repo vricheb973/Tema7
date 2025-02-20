@@ -57,6 +57,36 @@ public class Hora {
 		return String.format("%02d:%02d", this.hora, this.minuto);
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		if(!this.getClass().equals(obj.getClass())) {
+			return false;
+		}
+		
+		boolean iguales = false;
+		Hora otra = (Hora) obj;
+		
+		if(this.hora == otra.hora &&
+			this.minuto == otra.minuto) {
+			iguales = true;
+		}
+		
+		return iguales;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

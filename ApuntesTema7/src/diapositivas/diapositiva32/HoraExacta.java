@@ -37,8 +37,41 @@ public class HoraExacta extends Hora {
 	
 	@Override
 	public String toString() {
-		return String.format("%02d:%02d:%02d", this.getHora(), this.getMinuto(), this.segundo);
+		return super.toString() + String.format(":%02d", this.segundo);
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		if(!this.getClass().equals(obj.getClass())) {
+			return false;
+		}
+		
+		boolean iguales = false;
+		HoraExacta otra = (HoraExacta) obj;
+		
+		if(super.equals(obj) &&
+				this.segundo == otra.segundo) {
+			iguales = true;
+			}
+		
+		return iguales;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

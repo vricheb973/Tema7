@@ -51,18 +51,29 @@ public class Persona extends Object {
 		return "Persona [nombre=" + this.nombre + ", edad=" + this.edad + ", estatura=" 
 	+ this.estatura + "]";
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		if(!this.getClass().equals(obj.getClass())) {
+			return false;
+		}
+		
+		boolean iguales = false;
+		Persona otra = (Persona) obj;
+		
+		if(this.nombre.equals(otra.nombre) &&
+			this.edad == otra.edad &&
+			this.estatura == otra.estatura) {
+			iguales = true;
+		}
+		
+		return iguales;
+	}
 	
 	
-//	@Override
-//	public String toString() {
-//		String result = "Persona \n";
-//		
-//		result += "nombre = " + this.nombre
-//				+ ", edad = " + this.edad 
-//				+", estatura = " + this.estatura;
-//		
-//		return result;
-//	}
 
 	
 	
