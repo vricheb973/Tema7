@@ -9,6 +9,7 @@ public abstract class Instrumento {
 	
 	public Instrumento() {
 		this.melodia = new ArrayList<Nota>();
+		
 	}
 	
 	public List<Nota> getMelodia() {

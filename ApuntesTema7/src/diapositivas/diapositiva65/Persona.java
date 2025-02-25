@@ -1,6 +1,6 @@
-package diapositivas.diapositiva05;
+package diapositivas.diapositiva65;
 
-public class Persona {
+public class Persona implements Comparable<Persona> {
 	
 	//atributos
 	private String nombre;
